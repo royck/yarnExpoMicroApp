@@ -1,0 +1,16 @@
+{
+  "name": "yarnexpomicroapp",
+  "private": true,
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "start:main": "yarn workspace main start",
+    "start:payments": "yarn workspace payments start",
+    "start:support": "yarn workspace support start"
+  }
+}
